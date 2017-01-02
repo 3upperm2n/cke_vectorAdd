@@ -90,7 +90,7 @@ int main( int argc, char **argv)
 		cudaMemcpyAsync(c_h + offset, c_d + offset,  databytes, cudaMemcpyDeviceToHost, streams[i]);
 	}
 
-	cudaDeviceSynchronize();
+	//cudaDeviceSynchronize();
 
 	// check data
 	bool success = 1;
